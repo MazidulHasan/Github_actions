@@ -1,0 +1,28 @@
+{
+  "name": "dummyjson-api-automation",
+  "version": "1.0.0",
+  "description": "API automation framework for DummyJSON using Playwright with POM and fixtures",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "playwright test",
+    "test:auth": "playwright test tests/auth",
+    "test:users": "playwright test tests/users",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "api",
+    "automation",
+    "dummyjson",
+    "pom"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0"
+  }
+}
