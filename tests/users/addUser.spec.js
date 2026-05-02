@@ -32,7 +32,8 @@ test.describe('Users - Add User', () => {
 
   test('should add user with only required fields (firstName)', async ({ userApi }) => {
     const response = await userApi.addUser({ firstName: 'MinimalUser' });
-
+    console.log("Ai is awesome");
+    
     expect(response.status).toBe(201);
     expect(response.body).toMatchObject({ firstName: 'MinimalUser' });
   });
