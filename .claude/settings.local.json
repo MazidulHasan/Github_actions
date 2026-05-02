@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx playwright *)"
+      "Bash(npx playwright *)",
+      "Bash(Get-ChildItem -Path \"E:\\\\DummyJsonAPIAutomation\" -Force)",
+      "Bash(Select-Object Name, PSIsContainer)",
+      "PowerShell(tree *)",
+      "PowerShell(grep *)",
+      "PowerShell(ls -Path \"E:\\\\DummyJsonAPIAutomation\" -Force -Recurse | Where-Object {$_.Name -match \"github|gitlab|bitbucket|jenkins|travis|circle|azure-pipelines|Jenkinsfile|\\\\.circleci|\\\\.github\"} | Select-Object FullName)",
+      "PowerShell(Get-ChildItem -Path \"E:\\\\DummyJsonAPIAutomation\" -Force | Where-Object {$_.Name -match \"^\\\\.\"} | Select-Object Name)"
     ]
   }
 }
